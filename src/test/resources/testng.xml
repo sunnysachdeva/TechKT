@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="OLR Accceptance" verbose="1" parallel="none"
+	preserve-order="true">
+	
+	<listeners>
+		<listener class-name="com.sephora.techKT.listeners.RetryTestListener"></listener>
+		<listener class-name="com.sephora.techKT.listeners.CustomReporter"></listener>
+	</listeners>
+
+	<test name="Retry test">
+
+		<classes>
+			<class name="com.sephora.teckKT.RetryTest" />
+<!-- 			<methods> -->
+				
+<!-- 			</methods> -->
+		</classes>
+	</test>
+</suite>
